@@ -1,0 +1,29 @@
+# Node.js dependencies
+node_modules/
+
+# Logs and temp folders
+/logs/
+*.tmp
+
+# Cypress secrets
+/.env
+cypress.env.json
+
+# Cypress artifacts
+cypress/screenshots/
+cypress/videos/
+.cypress-cache/
+CypressCache/
+
+# Cypress examples
+integration
+example.json
+profile.json
+users.json
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Mochawesome reports
+cypress/results/
