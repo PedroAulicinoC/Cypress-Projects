@@ -1,4 +1,4 @@
-import { myUsers } from '../fixtures/myUsers.json'
+import { myUsers } from '../../fixtures/myUsers.json'
 
 describe('Mass User Account Creation', () =>{
     beforeEach(() => {

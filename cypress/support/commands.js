@@ -1,3 +1,4 @@
+//Commands for Adopet
 Cypress.Commands.add("register", (name ,email, password) => {   
     cy.get('[data-test="input-name"]').type(name);
     cy.get('[data-test="input-email"]').type(email);
@@ -12,6 +13,14 @@ Cypress.Commands.add("login", (email, password) => {
     cy.get('[data-test="input-loginPassword"]').type(password);
 
     cy.get('[data-test="submit-button"]').click(); 
+})
+
+//Commands for Cnarios
+Cypress.Commands.add("loginCnarios", (email, password) =>{
+    cy.get('#«r1»').type(email);
+    cy.get('#«r2»').type(password);
+
+    cy.get('.MuiCardContent-root > .MuiButtonBase-root').click();
 })
 
 // ***********************************************
