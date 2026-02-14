@@ -14,6 +14,11 @@ describe('Role-Based Login Flow Challenge', () => {
         cy.contains('Invalid username or password.').should('be.visible');
     });
 
+    it('Verify error message on empty fields', () => {
+        cy.get('.MuiCardContent-root > .MuiButtonBase-root').click();
+        cy.contains('Both fields are required.').should('be.visible');
+    });
+
     it('Login as user and validate user dashboard', () => {
         cy.loginCnarios('user', 'user123');
         cy.contains('User Dashboard').should('be.visible');
